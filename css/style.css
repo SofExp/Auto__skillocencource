@@ -28,8 +28,7 @@ html, body{
   border: 1px solid #939191;
   opacity: 0.36;
 }
-.heading {
-}
+
 /*_____________________________________________________________________________*/
 
 .header {
@@ -210,15 +209,11 @@ html, body{
 }
 /*______________________________________________________________________________________*/
 
-.main {
-}
 .offer {
   display: flex;
   text-align: center;
   background: #F2F2F2;
   padding: 128px 0px;
-}
-.offer__inner {
 }
 .offer__inner-heading {
   margin-bottom: 50px;
@@ -235,9 +230,6 @@ html, body{
   line-height: 1.31;
   text-align: center;
   letter-spacing: -0.03em;
-}
-.offer__innen-body {
-
 }
 .offer__list {
   display: grid;
@@ -257,7 +249,7 @@ html, body{
 .offer__item-link{
   color: #1E1B1B;
 }
-.offer__item-img {
+.offer__item svg {
   margin-bottom: 16px;
 }
 .offer__item-text {
@@ -268,13 +260,14 @@ html, body{
 }
 .offer__item--active {
   background: #FF6433;
-  transform: 0.3;
+  transition: .3s;
+}
+.offer__item--active svg {
+  fill:#FFFFFF;
 }
 .offer__item--active .offer__item-text {
   color: #FFFFFF;
-  transform: 0.3;
-}
-.offer__more {
+  transition: .3s;
 }
 .offer__more-link{
   display: flex;
@@ -282,11 +275,15 @@ html, body{
 }
 .offer__more-text {
   margin-right: 16px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .offer__more-img {
 }
 .offer__more-link:hover {
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: .3s;
+  /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   color: #FF6433;
+}
+a svg:hover {
+  fill: #FF6433;
 }

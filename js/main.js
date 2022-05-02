@@ -1,7 +1,23 @@
 $(function () {
 
+  const controlls = document.querySelectorAll('.offer__item');
+  const activClass = 'offer__item--active';
+
+
+  controlls.forEach(function(control) {
+
+    control.addEventListener('click', function(e){
+      e.preventDefault();
+      
+      controlls.forEach(function(link){
+        link.closest('.offer__item').classList.remove(activClass);
+      })
+      control.closest('.offer__item').classList.add(activClass)
+      
+    })
+  })
+
   $("#rateYo").rateYo({
-    // starWidth: "36px",
     rating: 4.5,
     spacing: "5px",
     readOnly: true,
