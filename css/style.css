@@ -23,12 +23,12 @@ html, body{
   border-radius: 12px;
   color: #FFFFFF;
 }
-.logo {
-}
 .hr-line{
   height: 42px;
   border: 1px solid #939191;
   opacity: 0.36;
+}
+.heading {
 }
 /*_____________________________________________________________________________*/
 
@@ -36,17 +36,12 @@ html, body{
   display: flex;
   flex-direction: column;
 }
-.header__top {
-
-}
 .header__top-inner {
   display: flex; 
   justify-content: space-between;
   align-items: center;
   padding: 18px 0;
   margin-bottom: 80px;
-}
-.header__logo {
 }
 .header__nav {
   margin-left: auto;  
@@ -78,15 +73,9 @@ html, body{
   margin-left: 32px;
   margin-right: 14px;
 }
-.header__contact-info{
-}
-.header__contact-icon-link {
-}
 .header__contact-text {
   font-weight: 500;
   line-height: 1.5;
-}
-.header__contact-phone {
 }
 .header__contact-phone-link {
   font-weight: 600;
@@ -100,6 +89,7 @@ html, body{
 }
 .header__body {
   flex-grow: 1;
+  margin-bottom: 135px;
 }
 
 .header__body-inner {
@@ -223,22 +213,33 @@ html, body{
 .main {
 }
 .offer {
-}
-.container {
+  display: flex;
+  text-align: center;
+  background: #F2F2F2;
+  padding: 128px 0px;
 }
 .offer__inner {
 }
 .offer__inner-heading {
-}
-.heading {
+  margin-bottom: 50px;
 }
 .heading__subtitle {
+  font-size: 24px;
+  line-height: 1.5;
+  
+  letter-spacing: -0.03em;
 }
 .heading__title {
+  font-size: 58px;
+  line-height: 1.31;
+  text-align: center;
+  letter-spacing: -0.03em;
 }
 .offer__innen-body {
+
 }
 .offer__list {
+  display: grid;
 }
 .offer__item {
 }
