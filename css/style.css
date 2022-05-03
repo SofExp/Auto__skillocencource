@@ -262,8 +262,9 @@ html, body{
   background: #FF6433;
   transition: .3s;
 }
-.offer__item--active svg {
+.offer__item--active path {
   fill:#FFFFFF;
+  transition: .3s;
 }
 .offer__item--active .offer__item-text {
   color: #FFFFFF;
@@ -281,9 +282,10 @@ html, body{
 }
 .offer__more-link:hover {
   transition: .3s;
-  /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   color: #FF6433;
+
 }
-a svg:hover {
+.offer__more-link:hover path  {
   fill: #FF6433;
+  transition: .3s;
 }
