@@ -350,7 +350,7 @@ html, body{
   padding: 0;
 	height: 0;
 	border: none;
-	border-top: 3px dashed #FF6433;
+	border-top: 2px dashed #FF6433;
   transform: rotate(90deg);
 }
 .step-item__text {
