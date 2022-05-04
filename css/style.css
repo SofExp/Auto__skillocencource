@@ -283,7 +283,7 @@ html, body{
   color: #FF6433;
 
 }
-.offer__more-link:hover path  {
+.offer__more-link:hover path {
   fill: #FF6433;
   transition: .3s;
 }
