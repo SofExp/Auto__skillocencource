@@ -28,7 +28,19 @@ html, body{
   border: 1px solid #939191;
   opacity: 0.36;
 }
-
+.subtitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+}
+.title {
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 1.31;
+  text-align: center;
+  letter-spacing: -0.03em;
+}
 /*_____________________________________________________________________________*/
 
 .header {
@@ -214,6 +226,7 @@ html, body{
   text-align: center;
   background: #F2F2F2;
   padding: 128px 0px;
+  margin-bottom: 134px;
 }
 .offer__inner-heading {
   margin-bottom: 50px;
@@ -290,3 +303,68 @@ html, body{
 
 /* _____________________________________________________________________________ */
 
+.processsection__iner{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1087px;
+  max-height: 527px;
+  margin-bottom: 134px;
+}
+.processsection__left {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 524px;
+  max-height: 396px;
+}
+.processsection__title {
+  text-align: left;
+  margin-bottom: 16px;
+}
+.processsection__subtitle {
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0em;
+  opacity: 0.6;
+  max-width: 436px;
+  margin-bottom: 32px;
+}
+.processsection__right {
+  max-width: 432px;
+  min-height: 527px;
+  display: flex;
+}
+.processsection__step-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.processsection__step-item {
+  display: flex;
+  overflow: hidden;
+}
+.step-item__img { 
+  margin-bottom: 30px;
+}
+.hr-line {
+  margin: 20px 0;
+  padding: 0;
+	height: 0;
+	border: none;
+	border-top: 3px dashed #FF6433;
+  transform: rotate(90deg);
+}
+.step-item__text {
+  padding: 10px 0px 0px 24px;
+}
+.step-item__text-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+}
+.step-item__text-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.75;
+  opacity: 0.6;
+}
