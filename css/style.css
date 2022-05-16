@@ -420,9 +420,10 @@ html, body{
 .experience {
 }
 .experience__list {
-  max-height: 210px;
+  min-height: 210px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .experience__item {
   display: flex;
