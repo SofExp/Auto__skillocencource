@@ -379,7 +379,7 @@ html, body{
   margin: 0 auto;
   height: 100%;
   max-width: 1920px;
-  background: url("/img/cta/Group 9131.jpg") top left 0 / auto no-repeat;
+  background: url("../img/cta/Group 9131.jpg") top left 0 / auto no-repeat;
   overflow: hidden;
 }
 .cta__inner{
