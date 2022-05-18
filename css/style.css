@@ -374,11 +374,7 @@ html, body{
 }
 /* ______________________________________________________________________________ */
 .cta{
-  max-width: 100%;
   background: url("../img/cta/Group 9131.jpg") center center / cover no-repeat;  
-  padding: 0 15px;
-  margin: 0 auto;
-  height: 100%;
 }
 
 .cta__inner{
