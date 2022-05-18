@@ -10,8 +10,6 @@ html, body{
   max-width: 1310px;
   padding: 0 15px;
   margin: 0 auto;
-  height: 100%;
-
 }
 .button{
   display: inline-block;
@@ -462,7 +460,6 @@ html, body{
 .brands__title {
   margin-bottom: 31px;
 }
-
 .brands__list {
   display: grid;
   grid-template: auto auto / repeat(5, auto);
@@ -480,4 +477,68 @@ html, body{
 .brands__item:hover path {
   fill:#FFFFFF;
   transition: .3s;
+}
+
+
+/* ___________________________________________ */
+
+.footer {
+  display: block;
+  background: rgb(0, 0, 0);
+}
+.footer__top {  
+  background: rgb(0, 0, 0);
+}
+.footer__top-inner {
+  min-height: 549px;
+}
+.footer__top-left {
+}
+.footer__header {
+}
+.footer__social-icon {
+}
+.footer__top-right {
+}
+.footer__adress {
+}
+.footer__adress-list {
+}
+.footer__adress-item {
+}
+.adress__text-top {
+}
+.adress__text-bottom {
+}
+.footer__botton {  
+  min-height: 157px;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+
+}
+.footer__logo path {
+  fill:#FFFFFF;
+}
+.footer__nav-list {
+  display: flex;
+}
+.footer__nav-item {
+  margin-right: 40px;
+}
+.footer__nav-item:last-child {
+  margin-right: 0px;
+}
+.footer__nav-link {
+  font-weight: 600;
+  line-height: 1.75;
+  color: #FFFFFF;
+  transition: all .3s;
+}
+.footer__nav-link:hover {
+  text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.3);
+  color: #FF6433;
+}
+.footer__copyright {
+  color: grey;
 }
