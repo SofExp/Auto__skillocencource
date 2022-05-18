@@ -373,19 +373,17 @@ html, body{
   opacity: 0.6;
 }
 /* ______________________________________________________________________________ */
-
-.container__cta{
+.cta{
+  max-width: 100%;
+  background: url("../img/cta/Group 9131.jpg") center center / cover no-repeat;  
   padding: 0 15px;
   margin: 0 auto;
   height: 100%;
-  max-width: 1920px;
-  background: url("../img/cta/Group 9131.jpg") top left 0 / auto no-repeat;
-  overflow: hidden;
 }
+
 .cta__inner{
   display: flex;
   height: 502px;
-  /* padding-left: 318px; */
 }
 .cta__img {
   max-width: 1920px;
@@ -399,8 +397,7 @@ html, body{
   align-items: flex-start;
   background: #FF6433;
   width: 729px;
-  max-height: 100%;
-  margin-left: 318px;
+  max-height: 100%;  
 }
 .cta__content-text {
   margin: 128px 80px 48px 80px;
