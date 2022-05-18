@@ -271,6 +271,19 @@ html, body{
   line-height: 1.5;
   letter-spacing: -0.03em;
 }
+/* .offer__item:hover {
+  background: #FF6433;
+  transition: .3s;
+}
+.offer__item:hover path {
+  fill:#FFFFFF;
+  transition: .3s;
+}
+.offer__item:hover .offer__item-text {
+  color: #FFFFFF;
+  transition: .3s;
+} */
+
 .offer__item--active {
   background: #FF6433;
   transition: .3s;
@@ -459,4 +472,12 @@ html, body{
 .brands__item {
   min-width: 127.88px;
   margin-bottom: 38.64px;
+}
+.brands__item:hover {
+  background: #FF6433;
+  transition: .3s;
+}
+.brands__item:hover path {
+  fill:#FFFFFF;
+  transition: .3s;
 }
