@@ -483,6 +483,7 @@ html, body{
 /* ______________________________________________________ */
 
 .blog {
+  box-sizing: border-box;
 }
 .blog__inner {
   min-height: 1282px;
@@ -494,7 +495,7 @@ html, body{
 .blog__title {
   text-align: left;
 }
-.blog__body {
+.blog__body {  
 }
 .blog__filter-box {
 }
@@ -513,14 +514,51 @@ html, body{
 .blog__list {
   display: grid;
   grid-template: auto auto / repeat(3, auto);
-  gap: 32px;
+  gap: 64px 32px;
   margin-bottom: 136px;
+  box-sizing: border-box;
 }
 .blog__list-item {
+  box-sizing: border-box;
+  position: relative;
 }
+.blog__list-item:before {
+  content: '';
+  position: absolute;
+  top: -2%;
+  right: -3%;
+  left: -3%;
+  bottom: -2%;
+  border-top: solid 4px rgba(0, 0, 0, 0.116);
+  border-bottom: solid 4px rgba(0, 0, 0, 0.116);
+  transition: 0.3s;
+  transform: scalex(0);
+}
+.blog__list-item:after {
+  content: '';
+  position: absolute;
+  top: -2%;
+  right: -3%;
+  left: -3%;
+  bottom: -2%;
+  border-left: solid 4px rgba(0, 0, 0, 0.116);
+  border-right: solid 4px rgba(0, 0, 0, 0.116);
+  transition: 0.3s;
+  transform: scaley(0);
+}
+.blog__list-item:hover:before,
+.blog__list-item:hover:after{
+  transform: scale(1);
+}
+.blog__list-item:hover{
+  transition: 0.4s;
+  transform: scale(1.03);
+}
+
 .blog__list-link {
 }
 .blog__link-image {
+  margin-bottom: 24px;
 }
 .blog__link-content {
 }
@@ -529,6 +567,7 @@ html, body{
   font-size: 16px;
   line-height: 1.75;
   color: #939191;
+  margin-bottom: 16px;
 }
 .blog__link-title {
   font-weight: 700;
@@ -536,6 +575,7 @@ html, body{
   line-height: 1.5;
   letter-spacing: -0.03em;
   color: #1E1B1B;
+  margin-bottom: 16px;
 }
 .blog__link-text {
   font-weight: 600;
@@ -546,12 +586,69 @@ html, body{
 
 /* ___________________________________________ */
 
+.testimonials {
+  background: #F2F2F2;
+}
+.container {
+}
+.testimonials__inner {
+  min-height: 938px;
+}
+.testimonials__heading {
+  padding-top: 128px;
+  max-width: 909px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.testimonials__title {
+}
+.testimonials__list {
+}
+
+/* ___________________________________________ */
+
+.faq {
+  background: #E2E6E9
+}
+.faq__inner {
+  min-height: 1140px;
+}
+.faq__heading {
+  padding-top: 128px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.faq__title {
+}
+.faq__list {
+}
+/* ___________________________________________ */
+
+.getintouch {
+}
+.container {
+}
+.getintouch__inner {
+}
+.getintouch__heading {
+  min-width: 507px;
+  padding-top: 121px;
+  margin-right: auto;
+}
+.heading {
+}
+.getintouch__title {
+}
+.title {
+}
+.getintouch__list {
+}
+/* ___________________________________________ */
+
 .footer {
-  
+  background: rgb(0, 0, 0, 0.98);
 }
 .footer__top {
-  background: rgb(0, 0, 0);
-  opacity: 0.98;
 }
 .footer__top-inner {
   display: flex;
