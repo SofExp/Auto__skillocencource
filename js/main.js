@@ -34,6 +34,12 @@ $(function () {
 
   });
 
-  // var mixer = mixitup('.target');
+  var mixer = mixitup('.blog__list');
+
+  $('.blog__filter-item').on('click', function (){
+    $('.blog__filter-item').removeClass('blog__filter-item--active')
+    $(this).addClass('blog__filter-item--active')
+
+  })
 
 });

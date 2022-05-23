@@ -495,8 +495,6 @@ html, body{
 .blog__title {
   text-align: left;
 }
-.blog__body {  
-}
 .blog__filter-box {
 }
 .blog__filter-list {
@@ -511,6 +509,10 @@ html, body{
   background: #FFFFFF;
   margin-bottom: 46px;
 }
+.blog__filter-item--active{
+  text-shadow: 0px 0px 30px #FF6433;
+  transition: .3s;
+}
 .blog__list {
   display: grid;
   grid-template: auto auto / repeat(3, auto);
@@ -521,6 +523,8 @@ html, body{
 .blog__list-item {
   box-sizing: border-box;
   position: relative;
+  max-width: 405px;
+  max-height: 606px;
 }
 .blog__list-item:before {
   content: '';
@@ -599,11 +603,100 @@ html, body{
   max-width: 909px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 76px;
 }
 .testimonials__title {
 }
 .testimonials__list {
+  display: flex;
+  list-style: none;
 }
+.testimonials__item {
+  background: #FFFFFF;
+  min-width: 616px;
+  min-height: 376px;
+  margin-right: 48px;
+  margin-bottom: 47px;
+}
+.testimonials__item::nth-child(2){
+  margin-right: 0px;
+}
+.testimonials__item-inner {
+  padding: 72px;
+}
+.testimonials__person {
+  display: flex;
+  margin-bottom: 24px;
+}
+.testimonials__person-img {
+  border-radius: 64px;
+  margin-right: 16px;
+}
+.testimonials__person-name {
+  
+
+}
+.testimonials__person-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+}
+.testimonials__person-subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #939191;
+}
+.testimonials__text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+}
+.testimonials__bottom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.testimonials__ind {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+.testimonials__ind-item {
+  width: 32px;
+  height: 4px;
+  margin-right: 15px;
+}
+.testimonials__ind-item:last-child {
+  margin-right: 0px;
+}
+.testimonials__ind-line {
+	margin: 0;
+	padding: 0;
+	height: 6px;
+	border: none;
+	background: grey
+}
+
+.testimonials__ind-item--active .testimonials__ind-line{
+  background: #FF6433;
+}
+
+.testimonials__arrows {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0%;
+}
+.testimonials__arrows-left {
+  margin-right: 24px;
+}
+.testimonials__arrows-right {
+}
+/* ___________________________________________ */
 
 /* ___________________________________________ */
 
@@ -643,6 +736,11 @@ html, body{
 }
 .getintouch__list {
 }
+/* ___________________________________________ */
+
+
+
+
 /* ___________________________________________ */
 
 .footer {
@@ -741,4 +839,4 @@ html, body{
 }
 .footer__copyright {
   color: grey;
-}
+} 
