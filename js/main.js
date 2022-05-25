@@ -42,4 +42,13 @@ $(function () {
 
   })
 
+  $('.testimonials__slider').slick({
+    arrows: false,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    dots: true,
+    draggable: false,
+    appendArrows: $('.testimonials__arrows')
+
+  });
 });

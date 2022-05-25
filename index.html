@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/reset.css">
@@ -701,7 +702,8 @@
             <div class="blog__body">
               <div class="blog__filter-box">
                 <div class="blog__filter-list">
-                  <button class="blog__filter-item blog__filter-item--active" data-filter=".blog__list-item--latest">Latest</button>
+                  <button class="blog__filter-item blog__filter-item--active"
+                    data-filter=".blog__list-item--latest">Latest</button>
                   <button class="blog__filter-item" data-filter=".blog__list-item--popular">Popular</button>
                   <button class="blog__filter-item" data-filter=".blog__list-item--favorites">Favorites</button>
                 </div>
@@ -796,9 +798,9 @@
             <div class="testimonials__heading heading">
               <h1 class="testimonials__title title">Our customers say the nicest things about our service</h1>
             </div>
-            <ui class="testimonials__list">
-              <li class="testimonials__item">
-                <div class="testimonials__item-inner">
+            <div class="testimonials__slider">
+              <div class="testimonials__slide">
+                <div class="testimonials__slide-inner">
                   <div class="testimonials__person">
                     <div class="testimonials__person-img">
                       <img src="./img/testimonials/01.jpg" alt="">
@@ -812,9 +814,9 @@
                     at what they do. Not only did they repair my car in a short comprehensive look on all the working
                   </p>
                 </div>
-              </li>
-              <li class="testimonials__item">
-                <div class="testimonials__item-inner">
+              </div>
+              <div class="testimonials__slide">
+                <div class="testimonials__slide-inner">
                   <div class="testimonials__person">
                     <div class="testimonials__person-img">
                       <img src="./img/testimonials/02.jpg" alt="">
@@ -828,10 +830,42 @@
                     at what they do. Not only did they repair my car in a short comprehensive look on all the working
                   </p>
                 </div>
-              </li>
-            </ui>
+              </div>
+              <div class="testimonials__slide">
+                <div class="testimonials__slide-inner">
+                  <div class="testimonials__person">
+                    <div class="testimonials__person-img">
+                      <img src="./img/testimonials/01.jpg" alt="">
+                    </div>
+                    <div class="testimonials__person-name">
+                      <h5 class="testimonials__person-title">Jonathan Vallem</h5>
+                      <p class="testimonials__person-subtitle">New york</p>
+                    </div>
+                  </div>
+                  <p class="testimonials__text">I have got my car repaired at Finsweet many times before, they are good
+                    at what they do. Not only did they repair my car in a short comprehensive look on all the working
+                  </p>
+                </div>
+              </div>
+              <div class="testimonials__slide">
+                <div class="testimonials__slide-inner">
+                  <div class="testimonials__person">
+                    <div class="testimonials__person-img">
+                      <img src="./img/testimonials/02.jpg" alt="">
+                    </div>
+                    <div class="testimonials__person-name">
+                      <h5 class="testimonials__person-title">Smith Johnson</h5>
+                      <p class="testimonials__person-subtitle">New york</p>
+                    </div>
+                  </div>
+                  <p class="testimonials__text">I have got my car repaired at Finsweet many times before, they are good
+                    at what they do. Not only did they repair my car in a short comprehensive look on all the working
+                  </p>
+                </div>
+              </div>
+            </div>
             <div class="testimonials__bottom">
-              <ui class="testimonials__ind">
+              <!-- <ui class="testimonials__ind">
                 <li class="testimonials__ind-item">
                   <hr class="testimonials__ind-line">
                 </li>
@@ -844,14 +878,22 @@
                 <li class="testimonials__ind-item">
                   <hr class="testimonials__ind-line">
                 </li>
-              </ui>
+              </ui> -->
               <div class="testimonials__arrows">
-                <div class="testimonials__arrows-left">
-                  <img src="./img/testimonials/ArrowLeft.svg" alt="">
-                </div>
-                <div class="testimonials__arrows-right">
-                  <img src="./img/testimonials/ArrowRight.svg" alt="">
-                </div>
+                <a href="#" class="testimonials__arrow testimonials__arrow-left">
+                  <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M21.2852 9C21.8374 9 22.2852 8.55228 22.2852 8C22.2852 7.44772 21.8374 7 21.2852 7L21.2852 9ZM0.449017 7.29289C0.0584931 7.68342 0.058493 8.31658 0.449017 8.7071L6.81298 15.0711C7.2035 15.4616 7.83667 15.4616 8.22719 15.0711C8.61772 14.6805 8.61772 14.0474 8.22719 13.6569L2.57034 8L8.22719 2.34314C8.61772 1.95262 8.61772 1.31946 8.22719 0.928931C7.83667 0.538407 7.2035 0.538407 6.81298 0.928931L0.449017 7.29289ZM21.2852 7L1.15612 7L1.15612 9L21.2852 9L21.2852 7Z"
+                      fill="#1E1B1B" />
+                  </svg>
+                </a>
+                <a href="#" class="testimonials__arrow testimonials__arrow-right">
+                  <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M21.9923 8.70711C22.3828 8.31658 22.3828 7.68342 21.9923 7.29289L15.6283 0.928932C15.2378 0.538407 14.6046 0.538407 14.2141 0.928932C13.8236 1.31946 13.8236 1.95262 14.2141 2.34315L19.8709 8L14.2141 13.6569C13.8236 14.0474 13.8236 14.6805 14.2141 15.0711C14.6046 15.4616 15.2378 15.4616 15.6283 15.0711L21.9923 8.70711ZM1.15612 7C0.603839 7 0.156124 7.44771 0.156124 8C0.156124 8.55228 0.603839 9 1.15612 9L1.15612 7ZM21.2852 7L1.15612 7L1.15612 9L21.2852 9L21.2852 7Z"
+                      fill="#1E1B1B" />
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
@@ -999,6 +1041,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/mixitup.min.js"></script>
 <script src="js/main.js"></script>
 
