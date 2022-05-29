@@ -48,7 +48,15 @@ $(function () {
     slidesToScroll: 2,
     dots: true,
     draggable: false,
-    appendArrows: $('.testimonials__arrows')
-
+    waitForAnimate: false,
+    appendDots: $('.testimonials__dots')
+  });
+  $('.testimonials__arrow-left').on('click', function(e) {
+    e.preventDefault()
+    $('.testimonials__slider').slick('slickPrev')
+  });
+  $('.testimonials__arrow-right').on('click', function(e) {
+    e.preventDefault()
+    $('.testimonials__slider').slick('slickNext')
   });
 });
