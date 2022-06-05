@@ -386,7 +386,7 @@ html, body{
 }
 /* ______________________________________________________________________________ */
 .cta{
-  background: url("../img/cta/Group 9131.jpg") center center / cover no-repeat;  
+  background: url("../img/cta/Group 9131.jpg") center center / cover no-repeat;
 }
 
 .cta__inner{
@@ -887,13 +887,19 @@ html, body{
   position: relative;
   flex-direction: column;
 }
-.map {
+.map__inner {
   margin-bottom: -168px;
   z-index: 5;
 }
+#map {
+  width: 100%;
+  height: 512px;
+}
 .image {
-  display: flex;
-  justify-content: center;
+  width: 100%;
+  height: 448px;
+  background: url("../img/Image.jpg") center center / cover no-repeat;
+  
 }
 
 /* ___________________________________________ */

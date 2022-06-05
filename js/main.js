@@ -67,4 +67,6 @@ $(function () {
     e.preventDefault()
     $('.testimonials__slider').slick('slickNext')
   });
+
+
 });
