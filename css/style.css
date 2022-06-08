@@ -862,14 +862,14 @@ html, body{
 
 .getintouch__adress-item {
   margin-bottom: 32px;
-
+  display: flex;
+  flex-direction: column;
 }
 .getintouch__adress-text-top {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.75;
   opacity: 0.7;
-  /* margin-bottom: 2px; */
 }
 .getintouch__adress-text-bottom {
   font-weight: 600;
@@ -877,7 +877,10 @@ html, body{
   line-height: 1.5;
   letter-spacing: -0.03em;
 }
-
+.getintouch__adress-link:hover{
+  text-shadow: 0px 4px 4px rgba(56, 56, 56, 0.158);
+  color: #FF6433;
+}
 
 /* ___________________________________________ */
 
@@ -963,6 +966,11 @@ html, body{
   line-height: 1.5;
   letter-spacing: -0.03em;
   color: #FFFFFF;
+  transition: all .3s;
+}
+.adress__tel-bottom:hover{
+  text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.1);
+  color: #FF6433;
 }
 .footer__botton {
   background: rgb(0, 0, 0);
