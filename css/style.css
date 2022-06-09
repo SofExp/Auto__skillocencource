@@ -21,6 +21,10 @@ html, body{
   background: #FF6433;
   border-radius: 12px;
   color: #FFFFFF;
+  transition: all 1s;
+}
+.button:hover{
+  box-shadow: 0px 0px 1px 12px rgba(210, 210, 210, 0.5);
 }
 .hr-line{
   height: 42px;
@@ -134,9 +138,13 @@ html, body{
   min-width: 140px;
   padding: 12px 16px;
   font-weight: 500;
+  transition: all .3s;
 }
 .header__play svg {
   margin-right: 8px;
+}
+.header__play:hover{
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
 }
 .header__content-open {
   display: flex;
@@ -257,12 +265,14 @@ html, body{
   min-width: 316px;
   min-height: 232px;
   background: #FFFFFF;
+  transition: all .3s;
 }
 .offer__item-link{
   color: #1E1B1B;
 }
 .offer__item svg {
   margin-bottom: 16px;
+  
 }
 .offer__item-text {
   font-weight: 600;
@@ -285,15 +295,13 @@ html, body{
 
 .offer__item--active {
   background: #FF6433;
-  transition: .3s;
 }
 .offer__item--active path {
   fill:#FFFFFF;
-  transition: .3s;
+  transition: all .3s;
 }
 .offer__item--active .offer__item-text {
-  color: #FFFFFF;
-  transition: .3s;
+  color: #FFFFFF;  
 }
 .offer__more-link{
   display: flex;
@@ -304,13 +312,13 @@ html, body{
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .offer__more-link:hover {
-  transition: .3s;
+  transition: all .3s;
   color: #FF6433;
 
 }
 .offer__more-link:hover path {
   fill: #FF6433;
-  transition: .3s;
+  transition: all .3s;
 }
 
 /* _____________________________________________________________________________ */
@@ -470,14 +478,14 @@ html, body{
 .brands__item {
   min-width: 127.88px;
   margin-bottom: 38.64px;
+  transition: all .3s;
 }
 .brands__item:hover {
-  background: #FF6433;
-  transition: .3s;
+  background: #FF6433;  
 }
 .brands__item:hover path {
   fill:#FFFFFF;
-  transition: .3s;
+  transition: all .3s;
 }
 
 /* ______________________________________________________ */
