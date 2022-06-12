@@ -757,15 +757,24 @@ html, body{
 }
 
 
-/* ___________________________________________ */
+/* ___________________________________________________________________________________ */
 
 .faq {
   background: #E2E6E9;
 }
 .faq__inner {
-  min-height: 1140px;
-  max-width: 896px;
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.faq__block{
+  max-width: 895px;
+  width: 100%;
+  margin-bottom: 128px;
+}
+.faq__list{
+  display: block;
+  
 }
 .faq__heading {
   padding-top: 128px;
@@ -777,41 +786,62 @@ html, body{
 .faq__list-title-block{
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
+
 .faq__list-item {
-  max-width: 898px;
-  max-height: 226px;
+  width: 100%;
+  /* max-width: 898px; */
+  /* max-height: 226px; */
   background-color: #FFFFFF;
   margin-bottom: 12px;
-  padding: 32px 40px 38px 40px;
+  transition: all .3s;
+}
+.faq__list-link{
+  display: block;
+  padding: 32px 40px;
   transition: all .3s;
 }
 .faq__item-title {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.5;
   letter-spacing: -0.03em;
-  margin-bottom: 16px;
 }
-.faq__list-item-btn {
+.faq__item-btn{
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 51px;
   height: 48px;
   background-color: #FF6433;
   position: relative;
 }
-.img-item-btn--horizont {
+.faq__item-title::before,
+.faq__item-title::after{
+  content: '';
   position: absolute;
-  bottom: 38%;
-  left: 33%;
+  top: 50%;
+  right: 17px;
+  width: 17px;
+  height: 2px;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  z-index: 1;
+}
+.faq__item-title::after{
+  transform: rotate(90deg);
   transition: all .3s;
 }
-.img-item-btn--vertical {
-  position: absolute;
-  bottom: 25%;
-  left: 49%;
+.faq__list-link--active .faq__item-title::after{
+  transform: rotate(0deg);
 }
 .faq__item-text {
   display: none;
+  margin-top: 16px;
   max-width: 702px;
   min-height: 96px;
   font-weight: 600;
@@ -820,14 +850,31 @@ html, body{
   color: #939191;
   transition: all .3s;
 }
-.faq__list-item--active .img-item-btn--vertical{
+/* .faq__list-item-btn {
+  width: 51px;
+  height: 48px;
+  background-color: #FF6433;
+  position: relative;
+} */
+/* .img-item-btn--horizont {
+  position: absolute;
+  bottom: 38%;
+  left: 33%;
+}
+.img-item-btn--vertical {
+  position: absolute;
+  bottom: 25%;
+  left: 49%;
+} */
+
+/* .faq__list-item--active .img-item-btn--vertical{
   opacity: 0;
   transition: all .3s;
 }
 .faq__list-item--active .faq__item-text{
   display: block;
   transition: all .3s;
-}
+} */
 /* ___________________________________________ */
 
 
