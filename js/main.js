@@ -67,6 +67,15 @@ $(function () {
     dots: true,
     draggable: false,
     waitForAnimate: false,
+    responsive:[
+        {
+          breakpoint: 990,
+          settings:{
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        }
+      ],
     appendDots: $('.testimonials__dots')
   });
 

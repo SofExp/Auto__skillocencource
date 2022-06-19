@@ -154,7 +154,8 @@ html, body {
 }
 
 .header__content-text {
-  margin-right: 51px;
+  max-width: 624px;
+  padding: 0 20px 0 0;
 }
 
 .header__title {
@@ -162,8 +163,8 @@ html, body {
   font-size: 64px;
   line-height: 1.31;
   letter-spacing: -0.03em;
-  max-width: 624px;
   margin-bottom: 32px;
+  
 }
 
 .header__content-buttons {
@@ -197,8 +198,10 @@ html, body {
 .header__content-open {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   max-width: 370px;
+}
+.header__content-open-img{
+  margin-right: 13px;
 }
 
 .header__content-open-text {
@@ -222,7 +225,9 @@ html, body {
   display: flex;
   position: relative;
 }
-
+.header__content-img{
+  display: block;
+}
 .header__content-image-item {
   display: flex;
   align-items: center;
@@ -261,7 +266,7 @@ html, body {
   position: absolute;
   width: 326px;
   height: 102px;
-  left: 299px;
+  right: -15px;
   top: 453px;
 }
 
@@ -290,14 +295,15 @@ html, body {
 /*______________________________________________________________________________________*/
 
 .offer {
-  display: flex;
-  text-align: center;
   background: #F2F2F2;
   padding: 128px 0px;
   margin-bottom: 134px;
 }
-
+.offer__inner{
+  width: 100%;
+}
 .offer__inner-heading {
+  text-align: center;
   margin-bottom: 50px;
 }
 
@@ -318,7 +324,7 @@ html, body {
 
 .offer__list {
   display: grid;
-  grid-template: auto auto / repeat(4, auto);
+  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
   gap: 8px;
   margin-bottom: 32px;
 }
@@ -328,8 +334,8 @@ html, body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-width: 316px;
-  min-height: 232px;
+  width: 100%;
+  height: 100%;
   background: #FFFFFF;
   transition: all .3s;
 }
@@ -340,7 +346,8 @@ html, body {
 
 .offer__item svg {
   margin-bottom: 16px;
-
+  display: block;
+  margin: 70px auto 17px auto;
 }
 
 .offer__item-text {
@@ -348,20 +355,8 @@ html, body {
   font-size: 24px;
   line-height: 1.5;
   letter-spacing: -0.03em;
+  margin-bottom: 62px;
 }
-
-/* .offer__item:hover {
-  background: #FF6433;
-  transition: .3s;
-}
-.offer__item:hover path {
-  fill:#FFFFFF;
-  transition: .3s;
-}
-.offer__item:hover .offer__item-text {
-  color: #FFFFFF;
-  transition: .3s;
-} */
 
 .offer__item--active {
   background: #FF6433;
@@ -403,15 +398,13 @@ html, body {
   display: flex;
   justify-content: space-between;
   max-width: 1087px;
-  max-height: 527px;
   margin-bottom: 134px;
 }
 
 .processsection__left {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   max-width: 524px;
-  max-height: 396px;
 }
 
 .processsection__title {
@@ -430,7 +423,6 @@ html, body {
 
 .processsection__right {
   max-width: 432px;
-  min-height: 527px;
   display: flex;
   align-items: stretch;
 }
@@ -465,6 +457,7 @@ html, body {
 
 .step-item__text {
   padding: 10px 0px 0px 24px;
+  margin-bottom: 29px;
 }
 
 .step-item__text-title {
@@ -502,8 +495,8 @@ html, body {
   flex-direction: column;
   align-items: flex-start;
   background: #FF6433;
-  width: 729px;
-  max-height: 100%;
+  max-width: 729px;
+  height: 100%;
 }
 
 .cta__content-text {
@@ -577,8 +570,8 @@ html, body {
 }
 
 .brands__item {
-  min-width: 127.88px;
-  margin-bottom: 38.64px;
+  /* min-width: 127.88px; */
+  /* margin-bottom: 38.64px; */
   transition: all .3s;
 }
 
@@ -597,9 +590,9 @@ html, body {
   box-sizing: border-box;
 }
 
-.blog__inner {
+/* .blog__inner {
   min-height: 1282px;
-}
+} */
 
 .blog__heading {
   margin-top: 131px;
@@ -712,7 +705,8 @@ html, body {
 }
 
 .testimonials__inner {
-  min-height: 938px;
+  background: #F2F2F2;
+  height: 100%;
 }
 
 .testimonials__heading {
@@ -725,6 +719,7 @@ html, body {
 
 .testimonials .slick-list {
   margin: 0 -23.5px;
+  /* margin-bottom: 200px; */
 }
 
 .testimonials__slide {
@@ -733,11 +728,9 @@ html, body {
 }
 
 .testimonials__slide-inner {
-  /* max-width: 472px; */
   margin: 0 auto;
   padding: 72px;
   background: #FFFFFF;
-  /* max-width: 616px; */
 }
 
 .testimonials__slide-inner:hover {
@@ -748,7 +741,6 @@ html, body {
   /* box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1); */
   transition: all .3s;
 }
-
 
 .testimonials__person {
   display: flex;
@@ -845,15 +837,17 @@ html, body {
 }
 
 .testimonials__bottom {
-  margin-top: 23px;
   display: block;
   position: relative;
+  /* margin-top: 23px;
+  margin-bottom: 159px; */
+  padding: 45px 0 159px 0;
 }
 
 .testimonials__arrows {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 45px;
   transform: translateY(50%);
   display: flex;
   z-index: 1;
@@ -1235,6 +1229,81 @@ html, body {
 
 /* ================================MEDIA==================================== */
 /* ================================MEDIA==================================== */
+/* =================================1320==================================== */
+@media (max-width: 1320px){
+  .blog__list {
+    grid-template: auto auto / repeat(2, auto);
+  }
+}
+/* =================================1200==================================== */
+@media (max-width: 1250px){
+  .header__title {
+    font-size: 52px;
+    max-width: 470px;
+  }
+  .header__content-img{
+    max-width: 450px;
+  }
+  .service {
+    top: 30px;
+  }
+  .rating{
+    top: 340px;
+  }
+  /* ------------------------------------------------------------------ */
+  .brands__list {
+    display: grid;
+    grid-template: auto auto / repeat(4, auto);
+}
+}
+/* =================================990==================================== */
+@media (max-width: 990px){
+.header__body-inner{
+  flex-direction: column;
+  align-items: flex-start;
+}
+.header__content-img{
+  display: none;
+}
+.header__content-image{
+  width: 100%;
+  height: 230px;
+}
+.service{
+  position: absolute;
+  width: 282px;
+  height: 102px;
+  left: 20px;
+  top: 60px;
+}
+.rating{
+  position: absolute;
+  width: 326px;
+  height: 102px;
+  right: 50px;
+  top: 200px;
+}
+.header__content-text {
+  padding: 0;
+}
+/* ------------------------------------------------------------------ */
+.processsection__title{
+  font-size: 45px;
+  max-width: 450px;
+}
+.processsection__subtitle{
+  font-size: 14px;
+  max-width: 360px;
+}
+.step-item__text-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.step-item__text-subtitle {
+  font-size: 14px;
+}
+}
+/* =================================930===================================== */
 @media (max-width: 930px) {
   .overlay--show{
     opacity: 1;
@@ -1260,7 +1329,6 @@ html, body {
     justify-content: center;
     flex-direction: column;
     box-shadow: 0 5px 20px #1e1b1b6b;
-    
   }
   .burger span {
     display: block;
@@ -1279,18 +1347,6 @@ html, body {
     background-color: rgb(0, 0, 0, 0.6);
     border-radius: 3px;
   }
-  .burger--close.burger span{
-    /* display: none; */
-  }
-
-  .burger .burger--close::before {
-    
-  }
-
-  .burger::after .burger--close {
-  
-  }
-
   .header{
     padding-top: 171.5px;
   }
@@ -1346,11 +1402,164 @@ html, body {
   .header__contact-icon {
     margin-left: 0;
   }
-}
 
+  /* ------------------------------------------------------ */
+  .processsection__inner{
+    flex-direction: column;
+  }
+  .processsection__left{
+    margin-bottom: 80px;
+  }
+  .heading__subtitle{
+    font-size: 18px;
+  }
+  .heading__title{
+    font-size: 45px;
+  }
+  .offer__item-text{
+    font-size: 18px;
+  }
+  /* ----------------------------------------------------------------- */
+  .experience__list{
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    gap: 8px;
+  }
+  .experience__subtitle{
+    font-size: 18px;
+  }
+  /* ------------------------------------------------------------------ */
+  .brands__list {
+    display: grid;
+    grid-template: auto auto / repeat(3, auto);
+  }
+  /* ------------------------------------------------------------------ */
+  .testimonials__title{
+    font-size: 45px;
+  }
+  /* ------------------------------------------------------------------ */
+  .blog__list {
+    grid-template: auto auto / repeat(1, auto);
+  }
+  .blog__title {
+    font-size: 45px;
+  }
+  .blog__filter-item{
+    font-size: 24px;
+  }
+
+}
+/* =================================700===================================== */
+@media (max-width: 700px) {
+  .offer__list {
+    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+  }
+  .cta__content-text {
+    margin: 98px 40px 28px 40px;
+    max-width: 577px;
+    font-size: 38px;
+  }
+  /* ------------------------------------------------------------------ */
+  .brands__title {
+    font-size: 45px;
+  }
+  .brands__list {
+    display: grid;
+    grid-template: auto auto / repeat(2, auto);
+  }
+  /* ------------------------------------------------------------------- */
+
+  .testimonials__inner {
+    margin-bottom: 50px;
+  }
+  .testimonials__arrows {
+    top: 100px;
+  }
+}
+/* =================================500===================================== */
+@media (max-width: 500px) {
+  .brands__list {
+    display: grid;
+    grid-template: auto auto / repeat(1, auto);
+}
+}
+/* =================================430===================================== */
+@media (max-width: 430px) {
+  .header__title {
+    max-width: none;
+    font-size: 30px;
+  }
+  .header__content-buttons {
+    flex-direction: column;
+  }
+  .header__content-btn {
+    margin-right: 0px;
+    margin-bottom: 30px;
+    padding: 16px auto;
+
+  }
+  .top-text{
+    font-size: 12px;
+  }
+  .bottom-text{
+    font-size: 14px;
+  }
+  .header__content-image{
+    height: 160px;
+  }
+  .service,
+  .rating {
+    transform: scale(0.8);
+    left: 0;
+  }
+  .service{
+    top: 30px;
+  }
+  .rating{
+    top: 150px;
+  }
+  /* ---------------------------------------------------------- */
+  .offer__list {
+    grid-template: repeat(8, 1fr) / repeat(1, 1fr);
+  }
+  /* ---------------------------------------------------------- */
+  .testimonials__dots button {
+    width: 20px;
+  }
+
+}
+/* =================================400===================================== */
 @media (max-width: 400px) {
   .header__top{
     min-width: none;
     left: 0;
   }
+  /* --------------------------------------------------------- */
+  .cta__content-text {
+    font-size: 30px;
+    margin: 50px 20px 20px 20px;
+  }
+  .cta__content-btn {
+    margin: 0 0 0 20px;
+  }
 }
+/* =================================255===================================== */
+@media (max-width: 255px) {
+  .header__content-btn{
+    padding: 16px 10px;
+    font-size: 14px;
+  }
+  .header__play {
+    font-size: 14px;
+  }
+  .service,
+  .rating {
+    transform: scale(0.6);
+    left: 10px;
+  }
+  /* -------------------------------------------------------------- */
+  .cta__content-btn {
+    font-size: 12px;
+    margin: 0 0 0 10px;
+  }
+  }
