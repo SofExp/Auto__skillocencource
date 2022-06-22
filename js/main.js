@@ -41,24 +41,24 @@ $(function () {
     $(this).addClass('blog__filter-item--active')
 
   })
-  $('.faq__list-link').on('click', function (e){
-    e.preventDefault()
-    if ($(this).hasClass('faq__list-link--active')) {
-      $(this).children('.faq__item-text').slideUp()
-      $(this).removeClass('faq__list-link--active')
-    } else {
-      $('.faq__item-text').slideUp()
-      $('.faq__list-link').removeClass('faq__list-link--active')
-      $(this).addClass('faq__list-link--active')
-      $(this).children('.faq__item-text').slideDown()
-    }
-  })
   // $('.faq__list-link').on('click', function (e){
   //   e.preventDefault()
-  //   $(this).toggleClass('faq__list-link--active')
-
-  //   $(this).children('.faq__item-text').slideToggle()
+  //   if ($(this).hasClass('faq__list-link--active')) {
+  //     $(this).removeClass('faq__list-link--active')
+  //     $(this).children('.faq__item-text').slideUp("slow")
+  //   } else {
+  //     $('.faq__item-text').slideUp("slow")
+  //     $('.faq__list-link').removeClass('faq__list-link--active')
+  //     $(this).addClass('faq__list-link--active')
+  //     $(this).children('.faq__item-text').slideDown("slow")
+  //   }
   // })
+
+  $('.faq__list-link').on('click', function (e) {
+    e.preventDefault()
+    $(this).toggleClass('faq__list-link--active')
+    $(this).children('.faq__item-text').slideToggle()
+  })
 
   $('.testimonials__slider').slick({
     arrows: false,
