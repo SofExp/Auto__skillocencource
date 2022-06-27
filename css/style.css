@@ -902,29 +902,23 @@ body {
 
 .faq__inner {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  
+  flex-direction: column;
+  align-items: center;
 }
 
 .faq__block {
   max-width: 895px;
   width: 100%;
   margin-bottom: 128px;
-  
 }
 
 .faq__list {
   display: block;
-  
 }
 
 .faq__heading {
   padding-top: 128px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 86px;
-  
 }
 
 .faq__list-title-block {
@@ -938,15 +932,11 @@ body {
   width: 100%;
   background-color: #ffffff;
   margin-bottom: 12px;
-  
-  
 }
 
 .faq__list-link {
   display: block;
   padding: 32px 40px;
-  
-  
 }
 
 .faq__item-title {
@@ -957,7 +947,6 @@ body {
   font-size: 24px;
   line-height: 1.5;
   letter-spacing: -0.03em;
-  
 }
 
 .faq__item-btn {
@@ -995,11 +984,12 @@ body {
 .faq__item-text {
   margin-top: 16px;
   max-width: 702px;
-  min-height: 96px;
+  /* min-height: 96px; */
   font-weight: 600;
   font-size: 18px;
   line-height: 1.75;
   color: #939191;
+  
 }
 
 /* ___________________________________________ */
